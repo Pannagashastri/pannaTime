@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../Footer";
 
 function App() {
   setInterval(updatedTime, 1000);
@@ -14,6 +15,9 @@ function App() {
     <div className="container">
       <h1>{time}</h1>
       <button onClick={updatedTime}>Get Time</button>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
